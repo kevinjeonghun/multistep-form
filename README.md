@@ -9,7 +9,6 @@ A multistep form built with Vue.js, TypeScript, and Vite, designed to guide user
 - [Usage](#usage)
 - [Configuration](#configuration)
 - [Project Structure](#project-structure)
-- [License](#license)
 
 ## Features
 

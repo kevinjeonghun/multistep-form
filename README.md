@@ -4,17 +4,12 @@ A multistep form built with Vue.js, TypeScript, and Vite, designed to guide user
 
 ## Table of Contents
 
-- [Demo](#demo)
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Configuration](#configuration)
 - [Project Structure](#project-structure)
 - [License](#license)
-
-## Demo
-
-You can see a live demo of the project [here](https://your-demo-link.com) (Replace with actual demo link if available).
 
 ## Features
 

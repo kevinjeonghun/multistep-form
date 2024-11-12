@@ -1,5 +1,107 @@
-# Vue 3 + TypeScript + Vite
+# Multistep Form
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A multistep form built with Vue.js, TypeScript, and Vite, designed to guide users through a step-by-step process. This project includes configuration for TypeScript, Vite, and Tailwind CSS for styling.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## Table of Contents
+
+- [Demo](#demo)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Configuration](#configuration)
+- [Project Structure](#project-structure)
+- [License](#license)
+
+## Demo
+
+You can see a live demo of the project [here](https://your-demo-link.com) (Replace with actual demo link if available).
+
+## Features
+
+- **Multistep Form Navigation**: Seamlessly navigate through multiple form steps.
+- **Vue 3 Composition API**: Written using Vue 3's Composition API for a modular and modern structure.
+- **TypeScript**: Strong typing support with TypeScript.
+- **Tailwind CSS**: Utility-first CSS framework for fast and responsive design.
+- **Vite**: Lightning-fast development with Vite.
+
+## Installation
+
+### Prerequisites
+
+- Node.js (version 16 or higher recommended)
+- npm or yarn
+
+### Steps
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/kevinjeonghun/multistep-form.git
+   cd multistep-form
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open the project in your browser:
+
+   ```
+   http://localhost:3000
+   ```
+
+## Usage
+
+- **Building for Production**:
+
+  To build the project for production, run:
+
+  ```bash
+  npm run build
+  ```
+
+  The production build will be output to the `dist` folder.
+
+- **Testing the Production Build**:
+
+  To preview the production build locally:
+
+  ```bash
+  npm run preview
+  ```
+
+## Configuration
+
+### TypeScript
+
+This project uses TypeScript for type-checking. Type definitions for Vue files are configured in `src/shims-vue.d.ts`.
+
+### Tailwind CSS
+
+Tailwind CSS is used for styling. You can modify the configuration in `tailwind.config.js` as needed.
+
+### Vite
+
+The project is bundled with Vite. Configuration options can be found in `vite.config.ts`.
+
+## Project Structure
+
+```plaintext
+├── public               # Static assets
+├── src
+│   ├── assets           # Asset files
+│   ├── components       # Vue components
+│   ├── App.vue          # Root Vue component
+│   ├── main.ts          # Entry file
+│   └── shims-vue.d.ts   # TypeScript shim for Vue files
+├── index.html           # HTML template
+└── vite.config.ts       # Vite configuration
+```

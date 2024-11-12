@@ -1,5 +1,6 @@
 <template>
-  <div id="app" class="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+  <div id="app" class="flex flex-col items-center justify-center min-h-screen bg-cover bg-center bg-gray-100" 
+    style="background-image: url('https://images.photowall.com/interiors/60434/landscape/wallpaper/room89.jpg?w=4000&q=80');">
     <div class="bg-white p-8 rounded shadow-md w-full max-w-md">
       <div class="flex justify-between items-center mb-8">
         <div class="flex flex-col items-center">

@@ -3,14 +3,13 @@
     <div class="bg-white p-8 rounded shadow-md w-full max-w-md">
       <div class="flex justify-between items-center mb-8">
         <div class="flex flex-col items-center">
-          <div :class="['w-8 h-8 rounded-full flex items-center justify-center', currentStep >= 1 ? 'bg-blue-600 text-white' : 'bg-gray-300 text-white']">
-            <i v-if="currentStep > 1" class="fas fa-check"></i>
-            <span v-else>1</span>
+          <div :class="['w-8 h-8 rounded-full flex items-center justify-center', currentStep > 1 ? 'bg-gray-300 text-white' : 'bg-black text-white']">
+            <span>1</span>
           </div>
           <span class="text-sm mt-2 text-gray-600">Personal Information</span>
         </div>
         <div class="flex flex-col items-center">
-          <div :class="['w-8 h-8 rounded-full flex items-center justify-center', currentStep >= 2 ? 'bg-blue-600 text-white' : 'bg-gray-300 text-white']">
+          <div :class="['w-8 h-8 rounded-full flex items-center justify-center', currentStep === 2 ? 'bg-black text-white' : 'bg-gray-300 text-white']">
             <span>2</span>
           </div>
           <span class="text-sm mt-2 text-gray-600">Additional Information</span>
@@ -60,20 +59,20 @@
         </div>
         <div class="flex justify-between items-center">
           <button type="button" @click="prevStep" v-if="currentStep > 1" class="px-4 py-2 bg-gray-300 text-gray-700 rounded">Back</button>
-          <button type="submit" class="px-4 py-2 bg-blue-600 text-white rounded">{{ currentStep === 2 ? 'Submit' : 'Next' }}</button>
+          <button type="submit" class="px-4 py-2 bg-black text-white rounded">{{ currentStep === 2 ? 'Submit' : 'Next' }}</button>
         </div>
       </form>
       <div class="mt-8">
         <div class="relative pt-1">
           <div class="flex mb-2 items-center justify-between">
             <div>
-              <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-blue-200">
+              <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-black bg-gray-300">
                 {{ progress }}%
               </span>
             </div>
           </div>
           <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-gray-200">
-            <div :style="{ width: progress + '%' }" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-600"></div>
+            <div :style="{ width: progress + '%' }" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-black"></div>
           </div>
         </div>
       </div>

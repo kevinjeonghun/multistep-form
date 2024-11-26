@@ -1,4 +1,4 @@
-# Multistep Form
+# Multistep Form ![Status](https://img.shields.io/badge/Status-Rejected-blue)
 
 A multistep form built with Vue.js, TypeScript, and Vite, designed to guide users through a step-by-step process. This project includes configuration for TypeScript, Vite, and Tailwind CSS for styling.
 
@@ -161,5 +161,3 @@ The form steps and fields are defined in the following JSON structure:
 ├── index.html           # HTML template
 └── vite.config.ts       # Vite configuration
 ```
-
-![Status](https://img.shields.io/badge/Status-Rejected-blue)
